@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    padding: 4rem;
+    font-family: 'Montserrat', sans-serif !important;
+    width: 100vw;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    flex: 1;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 5px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(184, 8, 8, 0.2) 0px 7px 29px 0px;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* CSS */
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .article_image img {
+        /* height: 300px; */
+        /* width: auto !important; */
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .other_news {
+        flex-wrap: wrap;
+    }
+
+    .articles {
+        gap: 20px;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+}
